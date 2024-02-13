@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    display: flex; /*Elementlere responsive özelliği kazandırmak için verildi*/
+    align-items: center; /*Dikey hizalamada ortalamak için verildi*/
+    justify-content: center; /*Yatay hizalamada ortalamak için verildi*/
+    background-image: linear-gradient(to bottom right, rgb(105,105,105), rgb(220,220,220));
+}
+
+nav ul li{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+    background-color: black; /*Hover ve opacity özelliğinin siyah efekt vermesi için verildi */
+}
+
+nav ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 300ms all; /* Yumuşak geçiş için verildi*/
+}
+
+nav ul li:hover{
+    transform: translateY(-25px); /*Fotoğrafa imleç geldiğinde fotoğrafın yukarı kalkması için verildi*/
+}
+
+nav ul li:hover img{
+    opacity: 50%; /*Fotoğrafa imleç geldiğinde fotoğrafın opacity değeri düşmesi için verildi.*/
+}
